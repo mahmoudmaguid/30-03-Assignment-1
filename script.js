@@ -11,8 +11,16 @@ function getBudgets(array) {
 }
 
 /* now time to test the function */
-  console.log("The Total Budget is :"+getBudgets([
+  
+  let arrayOneTest =[
     { name: "Mahmoud", age: 39, budget: 88000 },
     { name: "Panyet",  age: 32, budget: 68000 },
     { name: "Panyoot",  age: 22, budget:24000 }
-  ])+"CAD");
+  ];
+/* i used spread operstor to get the array ready to use in th function*/
+let arrayTwoTest=[...arrayOneTest];
+
+console.log(arrayTwoTest);
+
+/* now i am using the function to get the total budget*/
+console.log("The Total Budget is :"+getBudgets(arrayTwoTest)+"CAD");
